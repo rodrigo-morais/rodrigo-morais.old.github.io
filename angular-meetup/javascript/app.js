@@ -4,7 +4,7 @@ var app = angular.module('myApp', ['rmMeetup'])
                     "rmConsumerProvider",
                     function(rmConsumerProvider) {
                         rmConsumerProvider.setKey('li1i10kfumgoi7sk58stlhjac');
-                        rmConsumerProvider.setRedirectURI('http://localhost:8080');
+                        rmConsumerProvider.setRedirectURI('http://rodrigo-morais.github.io/angular-meetup/');
                     }
                 ]
             );

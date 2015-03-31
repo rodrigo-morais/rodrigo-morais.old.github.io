@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: '/app',
+    baseUrl: '/angular-meetup-example/app',
     urlArgs: 'v=1.0'
 });
 

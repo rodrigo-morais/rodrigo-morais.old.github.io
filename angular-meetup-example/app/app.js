@@ -15,7 +15,7 @@ define(["exports", "components/header/directives/rmHeaderDirective", "components
 
   app.config(["rmConsumerProvider", function (rmConsumerProvider) {
     rmConsumerProvider.setKey("li1i10kfumgoi7sk58stlhjac");
-    rmConsumerProvider.setRedirectURI("http://rodrigo-morais.github.io");
+    rmConsumerProvider.setRedirectURI("http://rodrigo-morais.github.io/angular-meetup-example");
   }]);
 
   app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {

@@ -14,8 +14,8 @@ define(["exports", "components/header/directives/rmHeaderDirective", "components
   var app = angular.module("myApp", ["ngRoute", "rmMeetup", "door3.css"]);
 
   app.config(["rmConsumerProvider", function (rmConsumerProvider) {
-    rmConsumerProvider.setKey("1h82intl8imm92ivovvphp0f9c");
-    rmConsumerProvider.setRedirectURI("http://localhost:8080");
+    rmConsumerProvider.setKey("li1i10kfumgoi7sk58stlhjac");
+    rmConsumerProvider.setRedirectURI("http://rodrigo-morais.github.io");
   }]);
 
   app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {

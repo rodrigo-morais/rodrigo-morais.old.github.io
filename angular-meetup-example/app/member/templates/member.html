@@ -1,0 +1,58 @@
+<h1 class="internal-title" data-ng:cloak>Logged Member</h1>
+<div class="principal member" data-ng:cloak>
+    <div class="photo">
+        <img data-ng:src="{{member.photo.photo_link}}" alt="photo" />
+    </div>
+    <div class="data">
+        <div>
+            <label class="field">Id</lablel>
+            <span class="value">{{ member.id }}</span>
+        </div>
+        <div>
+            <label class="field">Name</lablel>
+            <span class="value">{{ member.name }}</span>
+        </div>
+        <div>
+            <label class="field">Country</lablel>
+            <span class="value">{{ member.country | uppercase }}</span>
+        </div>
+        <div>
+            <label class="field">City</lablel>
+            <span class="value">{{ member.city }}</span>
+        </div>
+        <div>
+            <label class="field">Status</lablel>
+            <span class="value">{{ member.status }}</span>
+        </div>
+        <div>
+            <label class="field">Meetup Profile</lablel>
+            <a
+                href="{{ member.link }}"
+                class="value"
+                target="_blank"
+            >
+                {{ member.link }}
+            </a>
+        </div>
+        <div>
+            <label class="field">Language</lablel>
+            <span class="value">{{ member.lang }}</span>
+        </div>
+    </div>
+
+    <h2 class="sub-title">Code:</h2>
+    <div class="section-code">
+        <p>Controller code</p>
+        <pre><code>
+var rmMemberController = ($scope, $rootScope, rmMeetupMembersService) => {
+    rmMeetupMembersService.getLoggedMember($rootScope.token).then(function(member){
+        $scope.member = member;
+    });
+};
+
+rmMemberController.$inject = ['$scope', '$rootScope', 'rmMeetupMembersService'];
+
+export default rmMemberController;
+        </code></pre>
+    </div>
+</div>

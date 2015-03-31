@@ -20,10 +20,10 @@ define(["exports", "components/header/directives/rmHeaderDirective", "components
 
   app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
     $routeProvider.when("/member", {
-      templateUrl: "app/member/templates/member.html",
+      templateUrl: "angular-meetup-example/app/member/templates/member.html",
       controller: rmMemberController
     }).when("/token", {
-      templateUrl: "app/token/templates/token.html",
+      templateUrl: "angular-meetup-example/app/token/templates/token.html",
       controller: rmTokenController
     }).otherwise({
       redirectTo: function redirectTo() {

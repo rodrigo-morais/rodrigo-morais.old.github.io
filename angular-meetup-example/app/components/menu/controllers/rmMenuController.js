@@ -4,11 +4,11 @@ define(["exports", "module"], function (exports, module) {
     var rmMenuController = function ($scope) {
         $scope.menus = [{
             text: "Show Member",
-            link: "/#member",
+            link: "/angular-meetup-example/#member",
             selected: false
         }, {
             text: "Token Data",
-            link: "/#token",
+            link: "/angular-meetup-example/#token",
             selected: false
         }];
 
